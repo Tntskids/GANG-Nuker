@@ -57,7 +57,7 @@ try:
         config = json.load(f)
 except:
     with open('data/logins.json', 'w') as f:
-            print(f"\n[{g}#\x1b[95m\x1B[37m] Logging Into GANG-Nuker")
+            print(f"\n[{g}#\x1b[95m\x1B[37m] Logging Into Dash-Nuker")
             login = input("[\x1b[95m#\x1b[95m\x1B[37m] Enter A Username: ")
             json.dump({"Login": login}, f, indent=4)
     input(f"\n[\x1b[95m#\x1b[95m\x1B[37m] Successfully Logged in as: [{m}{login}{w}]\n[\x1b[95m>\x1b[95m\x1B[37m] Press ENTER to Continue: ")
@@ -159,8 +159,8 @@ def spammer():
     Write.Print("                                    | $$ /$$$$| $$$$$$$$| $$ $$ $$| $$ /$$$$\n", Colors.purple_to_blue, interval=0.000)
     Write.Print("                                    | $$|_  $$| $$__  $$| $$  $$$$| $$|_  $$\n", Colors.purple_to_blue, interval=0.000)
     Write.Print(f' > [v{THIS_VERSION}]                         | $$  \ $$| $$  | $$| $$\  $$$| $$  \ $$\n', Colors.purple_to_blue, interval=0.000)
-    Write.Print(f' > [gangnuker.org]                  |  $$$$$$/| $$  | $$| $$ \  $$|  $$$$$$/\n', Colors.purple_to_blue, interval=0.000)
-    Write.Print(" > [Github.com/TT-Tutorials]         \______/ |__/  |__/|__/  \__/ \______/ \n", Colors.purple_to_blue, interval=0.000)
+    Write.Print(f' > [dashnuker.org]                  |  $$$$$$/| $$  | $$| $$ \  $$|  $$$$$$/\n', Colors.purple_to_blue, interval=0.000)
+    Write.Print(" > [tnt gambles fr money gg]         \______/ |__/  |__/|__/  \__/ \______/ \n", Colors.purple_to_blue, interval=0.000)
     Write.Print("════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════", Colors.purple_to_blue, interval=0.000)
     print(f'''{m}'''.replace('$', f'{m}${w}') + f'''
 {m}[{w}1{Fore.RESET}{m}]{Fore.RESET} Server Joiner   {b}|{Fore.RESET}{m}[{w}9{Fore.RESET}{m}]{Fore.RESET}  Channel Spammer   {b}|{Fore.RESET}{m}[{w}17{Fore.RESET}{m}]{Fore.RESET} Patch Notes{Fore.RESET}         {b}|{Fore.RESET}{m}[{w}25{Fore.RESET}{m}]{Fore.RESET} Token Generator{Fore.RESET}
@@ -181,15 +181,15 @@ def spammer():
         Spinner()
         setTitle(f"Server Joiner    |    ")
         gh = input(f"""
-Joiner is in the Paid Version of GANG-Nuker!\nIf You Are Wanting to Purchase Make Sure to Checkout the Offical GANG-Nuker Website!
+Coming soon be ready!
                                    
-[\x1b[95m1\x1b[95m\x1B[37m] GANG-Nuker Website
+[\x1b[95m1\x1b[95m\x1B[37m] Discord
 [\x1b[95m2\x1b[95m\x1B[37m] Exit
   
 [\x1b[95m>\x1b[95m\x1B[37m] Choice?: """)
 
         if gh in ['01','1']:
-            webbrowser.open('https://gangnuker.org')
+            webbrowser.open('https://discord.gg/AHzx54a8')
         elif gh in ['02','2']:
             exit = spammer()
         else:
@@ -286,8 +286,8 @@ Joiner is in the Paid Version of GANG-Nuker!\nIf You Are Wanting to Purchase Mak
             setTitle(f"Token Onliner    |    ")
             config = {
                 "details": "FREE VERSION",
-                "state": "https://gangnuker.org",
-                "name": "GANG NUKER",
+                "state": "https://discord.gg/AHzx54a8",
+                "name": "DASH NUKER",
             }
 
             class Onliner:
@@ -388,7 +388,7 @@ Joiner is in the Paid Version of GANG-Nuker!\nIf You Are Wanting to Purchase Mak
         Server_Name = str(input(f'[\x1b[95m>\x1b[95m\x1B[37m] Server Name?: '))
         message_Content = str(input(f'[\x1b[95m>\x1b[95m\x1B[37m] MassDM Message?: '))
         if threading.active_count() < threads:
-            threading.Thread(target=utilities.Plugins.Account_Nuker.GANGNUKER_START, args=(token, Server_Name, message_Content)).start()
+            threading.Thread(target=utilities.Plugins.Account_Nuker.DASHNUKER_START, args=(token, Server_Name, message_Content)).start()
 
 
 
@@ -445,7 +445,7 @@ Joiner is in the Paid Version of GANG-Nuker!\nIf You Are Wanting to Purchase Mak
                     guildpl = "guilds"
                 else:
                     guildpl = "guild"
-                activity = discord.Game(name=f"GANG-Nuker Server Nuker", type=3)
+                activity = discord.Game(name=f"Dash-Nuker Server Nuker", type=3)
                 await gang.change_presence(status=discord.Status.dnd, activity=activity)
                 clear()
                 print(f"[\x1b[95m>\x1b[95m\x1B[37m] Bot : {gang.user} ({len(gang.guilds)} {guildpl})")
